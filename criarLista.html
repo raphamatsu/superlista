@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <title>Criar Lista</title>
+        <script src="criarLista.js"></script>
+
+    </head>
+    <body onload="gerarListaProdutos()">
+        <header class="header">
+            <a href="loginUsuario.html">SuperLista</a>
+            <img id="imgMarioCarrinho" src="img/marioCarrinho.png" alt="" srcset="">
+            <nav class="nav">
+                <ul class ="menu">
+                    <li><a href="inserirProduto.html">Inserir Produto</a></li>
+                    <li><a href="relatorio.html">Relatório</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <div id="mainDiv">
+        <form action="">
+            <label for="">Pesquisar produto:</label><input type="text" id="produtoSelecionado" list="listaProdutos" placeholder="Selecione o produto">
+            <datalist type="text" id="listaProdutos"></datalist>
+            <input type="button" id="botaoPesquisar" onclick="pesquisarItemLista()" value="Pesquisar">
+        </form>
+        
+        <table class="testTable" id="idTabelaHtml"></table>
+
+        <button id="botaoAddNovoItem" style="display:none" onclick="produtosChecked()">Add produto(s)</button>
+
+        <hr>
+        <section  class="preview" id="previewLista">
+        <fieldset><legend>Prévia do seu carrinho</legend>
+        <table id="tabelaPreview"></table>
+        
+        <input type="button" id="botaoCarrinho" style="display:none" value="Adicionar ao carrinho" onclick="gerarCarrinho()">
+        <button id="botaoReiniciarLista" style="display:none" onclick="reiniciarLista()">Reiniciar lista</button>
+        </section>
+        </fieldset>
+        </div>
+
+    </body>
+    <script src="carrinho.js"></script>
+</html>

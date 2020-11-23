@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* * {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    margin: -20px 0 50px;
+} */
+
+body #mainDiv {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0 50px;
+}
+
+#mainDiv button {
+    margin-top: 5px;
+}
+
+#mainDiv label {
+    width: fit-content;
+    margin: 2px 5px;
+}
+
+#nomeUsuario {
+    width: 260px;
+    height: 20px;
+}
+
+#cpfUsuario {
+    width: 280px;
+    height: 20px;
+}
+
+#emailUsuario,
+#senhaUsuario {
+    width: 260px;
+    height: 20px;
+}
+
+#confirmaSenhaUsuario {
+    width: 175px;
+    height: 20px;
+}
+
+#bairroUsuario {
+    width: 263px;
+    height: 20px;
+}
+
+.header,
+ul,
+li {
+    margin: 0px;
+    padding: 0;
+    border-radius: 20px 0;
+    list-style: none;
+    font-size: 19px;
+    color: #29EF74;
+    text-align: center;
+    background: rgb(248, 245, 245);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: #29EF74;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px;
+    color: white;
+    background: #29EF74;
+}
+
+header>a {
+    color: white;
+    font-size: 25px;
+}
+
+header>a:hover {
+    color: black;
+    font-size: 27px;
+}
+
+.menu {
+    background: #29EF74;
+    display: flex;
+}
+
+.menu li {
+    background: #29EF74;
+    margin-left: 11px;
+}
+
+.menu li a {
+    color: white;
+    display: block;
+    padding: 11px;
+}
+
+.menu li a:hover {
+    color: black;
+    display: block;
+    padding: 11px;
+}
+
+input[type="button"],
+button {
+    color: white;
+    background: rgba(41, 239, 116, 0.8);
+    border: 2px solid #29EF74;
+    border-radius: 3px;
+    font-size: 15px;
+    width: 160px;
+    height: 25px;
+    outline: none;
+}
+
+input[type="button"]:hover,
+button:hover {
+    color: white;
+    background: #29EF74;
+    border: 1px solid;
+    font-size: 16px;
+    width: 160px;
+    height: 27px;
+    cursor: pointer;
+}
+
+#campo-info,
+#nomeValidar,
+#nascimentoValidar,
+#cpfValidar,
+#emailValidar,
+#bairroValidar {
+    color: orange;
+    font-size: 12px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+#nomeValidar,
+#nascimentoValidar,
+#cpfValidar,
+#emailValidar,
+#bairroValidar,
+#senhaValidar,
+#loginValidar,
+#loginValidar {
+    color: orange;
+    font-size: 12px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.alert {
+    color: orange;
+    font-size: 12px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+input {
+    border: 1px solid #29EF74;
+    border-radius: 3px;
+    color: rgb(31, 31, 31);
+}
+
+input[type="date"] {
+    color: rgb(134, 134, 134);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="password"] {
+    outline-color: rgb(175, 174, 174);
+}
+
+input:hover {
+    border: 1px solid rgb(175, 174, 174);
+}
+
+input[type="number"]:-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+h5>a {
+    color: orange;
+}
+
+h5>a:hover {
+    color: rgb(175, 174, 174);
+}
+
+body #botaoAddNovoItem {
+    margin-left: 975px;
+}
+
+body #botaoCarrinho {
+    margin-left: 660px;
+}
+
+body #botaoReiniciarLista {
+    margin-right: 10%;
+    margin-top: -30px;
+}
+
+body #botaoPesquisar {
+    margin-left: 0px;
+    margin-top: 0.5%;
+}
+
+body #produtoSelecionado {
+    height: 20px;
+}
+
+#cpf,
+#loginCpf,
+#loginSenha,
+#alterarSenhaCpf,
+#alterarSenhaEmail,
+#alterarSenhaNova,
+#nomeEstabelecimento,
+#cepEstabelecimento,
+#contatoEstabelecimento,
+#bairroEstabelecimento,
+#produtoInserido,
+#marcaProdutoInserido,
+#volumePesoProdutoInserido,
+#dataCompra,
+#estabelecimentoProduto,
+#bairroProduto,
+#valorProduto {
+    height: 20px;
+}
+
+#loginCpf,
+#loginSenha {
+    width: 235px;
+}
+
+#alterarSenhaCpf,
+#alterarSenhaEmail,
+#alterarSenhaNova {
+    width: 170px;
+}
+
+#nomeEstabelecimento,
+#cepEstabelecimento,
+#contatoEstabelecimento,
+#bairroEstabelecimento,
+#produtoInserido,
+#marcaProdutoInserido,
+#volumePesoProdutoInserido,
+#dataCompra,
+#estabelecimentoProduto,
+#bairroProduto,
+#valorProduto {
+    width: 170px;
+}
+
+#bolhaAlterarSenha {
+    margin: 10px 30px;
+}
+
+#botListarEstab {
+    width: fit-content;
+}
+
+#previewLista {
+    margin: 0;
+}
+
+.inputQtdeTab {
+    text-align: center;
+    width: 75px;
+}
+
+#fieldSetCarrinho {
+    text-align: center;
+    margin-left: 10px;
+}
+
+#legCarrinho {
+    text-align: left;
+}
+
+.confirmaCPF {
+    margin-top: 400px;
+}
+
+#idConfirmaCpf {
+    height: 20px;
+    margin-right: 5px;
+}
+
+#botConfirmaCpf {
+    margin-top: 4px;
+}
+
+.botDinPainelCtrl {
+    margin: 0 2px;
+}
+
+
+/* EDICAO IMAGENS */
+
+#imgMarioCarrinho {
+    width: 65px;
+}
+
+#imgPrateleiraProdutos {
+    opacity: 0.9;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-right: 200px;
+    margin-top: 10%;
+}
+
+#imgCadastroEstabelecimento {
+    opacity: 0.9;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-right: 200px;
+    margin-top: 7%;
+}
+
+#imgAlterarSenha {
+    opacity: 0.7;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-right: 20%;
+    margin-top: 7%;
+}
+
+#camposEdicao {
+    text-align: center;
+}
+
+.swal-button--confirm {
+    background: rgba(41, 239, 116, 0.8);
+    margin-bottom: 3px;
+}
+
+.swal-button:not([disabled]):hover {
+    background-color: #29EF74;
+    font-size: 10px;
+}
+
+.swal-button {
+    background: rgba(41, 239, 116, 0.8);
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    font-size: 10px;
+    margin: 0;
+    cursor: pointer;
+}
+
+
+/* -------------------------css antigo ----------------------*/
+
+table,
+th,
+td {
+    padding: 5px;
+    text-align: center
+}
+
+th,
+td {
+    border-bottom: 1px solid #ddd;
+    width: 150px;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+label {
+    display: block;
+    float: left;
+}
+
+label,
+input {
+    width: 150px;
+    margin: 3px 0;
+}
+
+.preview {
+    margin-top: 150px;
+}

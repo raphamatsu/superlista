@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <title>Alterar Senha</title>
+    </head>
+    <body>
+
+        <header class="header">
+            <a href="loginUsuario.html">SuperLista</a>
+            <img id="imgMarioCarrinho" src="img/marioCarrinho.png" alt="" srcset="">
+
+            <nav class="nav">
+                <ul class ="menu">
+                    <li><a href="loginUsuario.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+    <div id="mainDiv">
+    <section id="bolhaAlterarSenha" class="bolha">
+        <h1>Alterar Senha</h1>
+        <label>CPF:</label>
+            <input id="alterarSenhaCpf" type="number" required>
+        <br>
+
+        <label>E-mail:</label>
+            <input id="alterarSenhaEmail" type="email" required>
+        <br>
+
+        <label>Nova Senha:</label>
+            <input id="alterarSenhaNova" type="password" required>
+            <div id="loginValidar"></div>
+        <br>
+        <button onclick="voltar()">Voltar</button>
+        <button onclick="alterarSenha()">Alterar</button>
+    </section>
+    </div>
+    </body>
+    <script src="usuario.js"></script>
+    <script src="produtos.js"></script>
+    <script src="bairros.js"></script>
+    <script src="estabelecimentos.js"></script>
+</html>

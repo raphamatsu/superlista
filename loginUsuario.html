@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <title>Login</title>
+    </head>
+    <body class="login">
+        <header class="header">
+            <a href="">SuperLista</a>
+            <img id="imgMarioCarrinho" src="img/marioCarrinho.png" alt="" srcset="">
+            <nav class="nav">
+                <ul class ="menu">
+                    <li><a href="cadastroUsuario.html">Cadastre-se</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="mainDiv">
+        <h1>Login</h1>
+        <label>CPF:</label>
+            <input id="loginCpf" type="number" required>
+        <br>
+        <label>Senha:</label>
+            <input id="loginSenha" type="password" required>
+        <h5>Esqueceu sua senha? <a href="alterarSenha.html">Alterar aqui!</a></h5>
+        <div id="loginValidar"></div>
+        <section id="bolhaAlterarSenha" class="bolha">
+            <button onclick="voltar()">Voltar</button>
+            <button onclick="login()">Login</button>
+        </section>
+        </div>
+    </body>
+    <script src="usuario.js"></script>
+    <script src="produtos.js"></script>
+    <script src="bairros.js"></script>
+    <script src="estabelecimentos.js"></script>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <title>Inserir Produto</title>
+    </head>
+    <body onload="gerarBairros(), gerarListaProdutos(),  gerarListaEstabelecimentos()">
+        <header class="header">
+            <a href="loginUsuario.html">SuperLista</a>
+            <img id="imgMarioCarrinho" src="img/marioCarrinho.png" alt="" srcset="">
+
+            <nav class="nav">
+                <ul class ="menu">
+                    <li><a href="criarLista.html">Criar Lista</a></li>
+                    <li><a href="relatorio.html">Relatório</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <div id="mainDiv">
+        <h2>Complete as informações abaixo</h2>
+
+        <form action="">
+        <label>Produto:</label>
+            <input type="text" list="listaProdutos" name="listaProdutos" placeholder="Escolha da lista" id="produtoInserido"/>
+            <div class='alert' id="produtoValidar"></div>
+            <datalist id="listaProdutos"></datalist>
+        <br>
+
+        <label>Marca:</label>
+            <input type="text" list="marcaProduto" name="marcaProduto" id="marcaProdutoInserido" placeholder="Marca do produto" required="required">
+            <div class='alert' id="marcaProdutoValidar"></div>
+            <datalist id="marcaProdutoInserido"></datalist>
+        <br>
+
+        <label>Peso/Volume:</label>
+            <input type="text" list="volumePesoProduto" name="volumePesoProduto" id="volumePesoProdutoInserido" placeholder="Ex: 1L, 500g, 1Kg" required="required">
+            <div class='alert' id="pesoVolumeProdutoValidar"></div>
+            <datalist type="text" id="volumePesoProdutoInserido"></datalist>
+        <br>
+
+
+        <label>Data da compra:</label>
+            <input id="dataCompra" type="date" required>
+            <div class='alert' id="dataCompraProdutoValidar"></div>
+        <br>
+
+        <label>Estabelecimento:</label>
+            <input type="text" list="listaEstabelecimentos" name="listaEstabelecimento" id="estabelecimentoProduto" placeholder="Local da compra">
+            <div class='alert' id="estabelecimentoProdutoValidar"></div>
+            <datalist id="listaEstabelecimentos" >         
+            </datalist>
+        <br>
+
+        <label>Bairro:</label>
+            <input type="text" list="bairros" id="bairroProduto" name="bairro" placeholder="Selecione seu bairro" required >
+            <div class='alert' id="bairroProdutoValidar"></div>
+            <datalist id="bairros"></datalist> 
+        <br>
+
+        <label>Valor unitário:</label>
+            <input id="valorProduto" type="number" required placeholder="Ex: 2.50">
+            <div class='alert' id="valorProdutoValidar"></div>
+        <br>
+        </form>
+        <section id="bolhaAlterarSenha" class="bolha">
+            <button onclick="voltar()">Voltar</button>
+            <button onclick="inserirProduto()">Inserir Produto</button>
+        </section>
+        </div>
+    </body>
+    <script src="usuario.js"></script>
+    <script src="produtos.js"></script>
+    <script src="criarLista.js"></script>
+    <script src="bairros.js"></script>
+    <script src="estabelecimentos.js"></script>
+</html>

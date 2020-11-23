@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <title>Cadastrar Estabelecimento</title>
+
+    </head>
+    <body onload="gerarBairros()">
+        <header class="header">
+            <a href="loginUsuario.html">SuperLista</a>
+            <img id="imgMarioCarrinho" src="img/marioCarrinho.png" alt="" srcset="">
+
+            <nav class="nav">
+                <ul class ="menu">
+                    <li><a href="inserirProduto.html">Inserir Produto</a></li>
+                    <li><a href="criarLista.html">Criar Lista</a></li>
+                    <li><a href="paineldecontrole.html">Painel de Controle</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="mainDiv">
+        <h1>Cadastro de Estabelecimento</h1>
+        <form action="">
+        <label>Estabelecimento:</label>
+            <input id="nomeEstabelecimento" type="text" required>
+            <div class='alert' id="estabelecimentoValidar"></div>
+        <br>
+        <label>CEP:</label>
+            <input id="cepEstabelecimento" type="number" required>
+            <div class='alert' id="cepValidar"></div>
+        <br>
+        <label>Telefone:</label>
+            <input id="contatoEstabelecimento" type="text" required>
+            <div class='alert' id="contatoValidar"></div>
+        <br>
+        <label>Bairro:</label>
+            <input type="text" list="bairros" id="bairroEstabelecimento" name="bairro" placeholder="Selecione seu bairro" required >
+            <datalist id="bairros">       
+            </datalist> 
+            <div class='alert' id="bairroEstabelecimentoValidar"></div>
+        <br>
+        </form>
+        <section id="bolhaAlterarSenha" class="bolha">
+            <button onclick="voltar()">Voltar</button>
+            <button onclick="cadastrarEstabelecimento()">Cadastrar</button>
+        </section>
+        </div>
+    </body>
+    <script src="usuario.js"></script>
+    <script src="produtos.js"></script>
+    <script src="bairros.js"></script>
+    <script src="estabelecimentos.js"></script>
+</html>

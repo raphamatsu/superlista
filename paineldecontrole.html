@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Painel de controle</title>
+</head>
+<body>
+    <header class="header">
+            <a href="loginUsuario.html">SuperLista</a>
+            <img id="imgMarioCarrinho" src="img/marioCarrinho.png" alt="" srcset="">
+            <nav class="nav">
+                <ul class ="menu">
+                    <li><a href="cadastroEstabelecimento.html">Inserir Estabelecimento</a></li>
+                    <li><a href="inserirProduto.html">Inserir Produto</a></li>
+                    <li><a href="criarLista.html">Criar Lista</a></li>
+
+                </ul>
+            </nav>
+        </header> <br><br>
+
+<div id="mainDiv">
+    <section>
+        <input type="button" value="Listar Usuários" onclick="gerarListaUsuarios()">
+        <input type="button" value="Listar Produtos" onclick="gerarListaProdutos()">
+        <input id="botListarEstab" type="button" value="Listar Estabelecimentos" onclick="gerarListaEstabelecimentos()">
+        <input type="button" value="Relatórios" onclick="gerarRelatorio()">
+
+    </section>
+    <section>
+        <table id="listaCadastrados"></table>
+    </section>
+    <section id='camposEdicao'>
+    </section>
+    <section id='botoesEditarExcluir'>
+    </section>
+    <section id='cabecalho'>
+    </section>
+    </div>
+    
+</body>
+<script src="paineldecontrole.js"></script>
+</html>

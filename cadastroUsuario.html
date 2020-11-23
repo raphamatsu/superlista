@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <title>Cadastrar</title>
+    </head>
+    <body onload="gerarBairros()">
+        <header class="header">
+            <a href="loginUsuario.html">SuperLista</a>
+            <img id="imgMarioCarrinho" src="img/marioCarrinho.png" alt="" srcset="">
+
+            <nav class="nav">
+                <ul class ="menu">
+                    <li><a href="loginUsuario.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="mainDiv">
+            
+        <h1>Cadastro de Usuários</h1>
+        
+        <form action="">
+        <label>Nome:</label>
+            <input id="nomeUsuario" type="text" required>
+            <div class='alert' id="nomeValidar"></div>
+        <br>
+
+        <label>Data de nascimento:</label>
+            <input id="nascimentoUsuario" type="date" required>
+            <div class='alert' id="nascimentoValidar"></div>
+        <br>
+
+        <label>CPF:</label>
+            <input id="cpfUsuario" type="number" required>
+            <div class='alert' id="cpfValidar">Campo Obrigatório.</div>
+        <br>
+
+        <label>E-mail:</label>
+            <input id="emailUsuario" type="email" required>
+            <div class='alert' id="emailValidar"></div>
+        <br>
+
+        <label>Senha:</label>
+            <input id="senhaUsuario" type="password" required>
+            <div class='alert' >Campo Obrigatório.</div>
+        <br>
+
+        <label>Confirmar senha:</label>
+            <input id="confirmaSenhaUsuario" type="password" required>
+            <div class='alert' id="senhaValidar">Campo Obrigatório.</div>
+        <br>
+
+        <label>Bairro:</label>
+            <input type="text" list="bairros" id="bairroUsuario" name="bairro" placeholder="Selecione seu bairro" required >
+            <datalist id="bairros">     
+            </datalist>
+            <div class='alert' id="bairroValidar"></div>    
+        <br>
+        </form>
+        <section id="bolhaAlterarSenha" class="bolha">
+            <button onclick="voltar()">Voltar</button>
+            <button onclick="cadastrarUsuario()">Cadastrar</button>
+        </section>
+        </div>
+    
+    </body>
+    <script src="usuario.js"></script>
+    <script src="produtos.js"></script>
+    <script src="bairros.js"></script>
+    <script src="estabelecimentos.js"></script>
+</html>
